@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .abc{
+        position: relative;
+    }
+    .a{
+        position: relative;
+        border: 4px solid black;
+        height: 100px;
+        margin: 30px;
+        z-index: 1;
+    }
+    .b{
+        position: absolute;
+        background-color:gray;
+        height: 60px;
+        margin: 30px;
+        width: 15%;
+        z-index: 2;
+        left: 50px;
+        top: 10px;
+        border: 2px solid black
+    }
+    .c{
+        position: absolute;
+        background-color: aquamarine;
+        border: 2px solid black;
+        z-index: 3;
+        height: 70px;
+        margin: 30px;
+        width:35%;
+    }
+</style>
+<body>
+    <div class="abc">
+        <div class="a">greenbox z index 1</div>
+        <div class="b">graybox zinex2</div>
+        <div class="c">bluebox zindex 3</div>
+    </div>
+    
+</body>
+</html>
